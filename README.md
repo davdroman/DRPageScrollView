@@ -11,15 +11,15 @@ Implement a paginated scroll view really easily using blocks.
 
 ## How to use
 
-### Properties you can get/set
+### Properties you can get & set
 
-**`NSTimeInterval`**`jumpDurationPerPage`
+`NSTimeInterval jumpDurationPerPage`
 
 - Description: the duration each page will last jumping with when jumping through multiple pages.
 - Default value: `0.1`
 - Recommended value: `0.05`-`0.4`
 
-**`void`**`(^actionWhenTappedBlock)(DRPaginatedScrollView *)`
+`void (^actionWhenTappedBlock)(DRPaginatedScrollView *)`
 
 - Description: action that executes when the paginated scroll view is tapped.
 - Default value:
@@ -32,20 +32,26 @@ Implement a paginated scroll view really easily using blocks.
 
 ### Properties you can get
 
-**`NSInteger`**`currentPage`
-
-- Description: index of the current page displaying (starting from 0).
-- Default value: `0`
-
-**`NSInteger`**`numberOfPages`
-
-- Description: the current number of pages of the paginated scroll view.
-
-**`BOOL`**`isJumping`
+`BOOL isJumping`
 
 - Description: whether the paginated scroll view is currently jumping between pages or not.
 
-### Pages setup
+### Methods returning values
+
+`- (NSInteger)currentPage`
+
+- Description: index of the current page displaying (indexes start from 0).
+- Default value: `0`
+
+`- (NSInteger)lastPage`
+
+- Description: index of the last page (indexes start from 0).
+
+`- (NSInteger)numberOfPages`
+
+- Description: the current number of pages of the paginated scroll view.
+
+### Setting up pages
 
 In process...
 
