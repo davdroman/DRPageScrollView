@@ -3,7 +3,49 @@ DRPaginatedScrollView
 
 Implement a paginated scroll view really easily using blocks.
 
+## Features
+
+- Block-driven pages setup.
+- Jump between pages (with bouncy effect).
+- Autolayout-ready.
+
 ## How to use
+
+### Properties you can get/set
+
+**`NSTimeInterval`**`jumpDurationPerPage`
+
+- Description: the duration each page will last jumping with when jumping through multiple pages.
+- Default value: `0.1`
+- Recommended value: `0.05`-`0.4`
+
+**`void`**`(^actionWhenTappedBlock)(DRPaginatedScrollView *)`
+
+- Description: action that executes when the paginated scroll view is tapped.
+- Default value:
+
+		^(DRPaginatedScrollView * paginatedScrollView) {
+			[paginatedScrollView jumpToPage:[paginatedScrollView currentPage]+1 bounce:0 completion:nil];
+		}
+		
+- Recommended value: any.
+
+### Properties you can get
+
+**`NSInteger`**`currentPage`
+
+- Description: index of the current page displaying (starting from 0).
+- Default value: `0`
+
+**`NSInteger`**`numberOfPages`
+
+- Description: the current number of pages of the paginated scroll view.
+
+**`BOOL`**`isJumping`
+
+- Description: whether the paginated scroll view is currently jumping between pages or not.
+
+### Pages setup
 
 In process...
 
