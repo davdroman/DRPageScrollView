@@ -8,12 +8,12 @@
 
 #import "DRPaginatedScrollView.h"
 
-@interface DRPaginatedScrollView ()
+@interface DRPaginatedScrollView () {
+    NSInteger previousPage;
+    NSMutableArray * pageViews;
+}
 
 @property (strong, nonatomic) UITapGestureRecognizer * tapGestureRecognizer;
-
-@property (readwrite, nonatomic) NSInteger currentPage;
-@property (readwrite, nonatomic) NSInteger numberOfPages;
 
 @property (readwrite, nonatomic, getter = isJumping) BOOL jumping;
 
@@ -23,6 +23,8 @@
 
 - (id)init {
     if (self = [super init]) {
+        pageViews = [NSMutableArray new];
+        
         [self setPagingEnabled:YES];
         [self setShowsHorizontalScrollIndicator:NO];
         [self setShowsVerticalScrollIndicator:NO];
@@ -41,10 +43,6 @@
 
 - (void)handleTap {
     if (self.actionWhenTappedBlock) self.actionWhenTappedBlock(self);
-}
-
-- (NSInteger)lastPage {
-    return self.numberOfPages-1;
 }
 
 - (void)layoutSubviews {
@@ -70,7 +68,7 @@
     UIView * previousPageView = nil;
     
     if (self.numberOfPages > 0) {
-        previousPageView = [self subviewWithTag:self.numberOfPages-1];
+        previousPageView = pageViews[self.numberOfPages-1];
     }
     
     NSLayoutConstraint * topConstraint = [NSLayoutConstraint constraintWithItem:pageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
@@ -86,19 +84,19 @@
     
     [self addConstraints:@[topConstraint, leftConstraint, widthConstraint, heightConstraint]];
     
-    self.numberOfPages++;
+    [pageViews addObject:pageView];
 }
 
-- (UIView *)subviewWithTag:(NSInteger)tag {
-    for (UIView * subview in self.subviews) {
-        if (subview.tag == tag) return subview;
-    }
-    
-    return nil;
+- (NSInteger)lastPage {
+    return self.numberOfPages-1;
 }
 
 - (NSInteger)currentPage {
     return round(self.contentOffset.x/self.frame.size.width);
+}
+
+- (NSInteger)numberOfPages {
+    return [pageViews count];
 }
 
 - (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion {

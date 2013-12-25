@@ -8,19 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DRPaginatedScrollView : UIScrollView {
-    NSInteger previousPage;
-}
-
-@property (readonly, nonatomic) NSInteger currentPage;
-@property (readonly, nonatomic) NSInteger numberOfPages;
+@interface DRPaginatedScrollView : UIScrollView
 
 @property (nonatomic) NSTimeInterval jumpDurationPerPage;
 @property (readonly, nonatomic, getter = isJumping) BOOL jumping;
 
 @property (copy, nonatomic) void (^actionWhenTappedBlock)(DRPaginatedScrollView *);
 
+- (NSInteger)currentPage;
 - (NSInteger)lastPage;
+- (NSInteger)numberOfPages;
+
 - (void)addPageWithHandler:(void (^)(UIView * pageView))handler;
 - (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion;
 
