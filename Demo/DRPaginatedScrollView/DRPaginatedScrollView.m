@@ -31,7 +31,7 @@
         [self setJumpDurationPerPage:0.1];
         
         [self setActionWhenTappedBlock:^(DRPaginatedScrollView * paginatedScrollView) {
-            [paginatedScrollView jumpToPage:[paginatedScrollView currentPage]+1 bounce:0 completion:nil];
+            [paginatedScrollView jumpToPage:[paginatedScrollView nextPage] bounce:0 completion:nil];
         }];
         
         self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
@@ -87,12 +87,16 @@
     [pageViews addObject:pageView];
 }
 
-- (NSInteger)lastPage {
-    return self.numberOfPages-1;
-}
-
 - (NSInteger)currentPage {
     return round(self.contentOffset.x/self.frame.size.width);
+}
+
+- (NSInteger)nextPage {
+    return self.currentPage+1;
+}
+
+- (NSInteger)lastPage {
+    return self.numberOfPages-1;
 }
 
 - (NSInteger)numberOfPages {

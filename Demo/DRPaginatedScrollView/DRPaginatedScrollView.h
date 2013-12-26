@@ -16,6 +16,7 @@
 @property (copy, nonatomic) void (^actionWhenTappedBlock)(DRPaginatedScrollView *);
 
 - (NSInteger)currentPage;
+- (NSInteger)nextPage;
 - (NSInteger)lastPage;
 - (NSInteger)numberOfPages;
 
