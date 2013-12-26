@@ -3,13 +3,13 @@ DRPaginatedScrollView
 
 Implement a paginated scroll view really easily using blocks.
 
--> ***Portrait orientation*** <-
+***<p align="center">Portrait orientation</p>***
 
 <p align="center">
 	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/1.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" width="320px" />
 </p>
 
--> ***Landscape orientation*** <-
+***<p align="center">Landscape orientation</p>***
 
 <p align="center">
 	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
