@@ -16,23 +16,21 @@ Implement a paginated scroll view really easily using blocks.
 
 `- (NSInteger)currentPage`
 
-- Description: index of the current page displaying (indexes start from 0).
+- Returns: index of the current page displaying (indexes start from 0).
 
 `- (NSInteger)nextPage`
 
-- Description: index of the next page (indexes start from 0).
+- Returns: index of the next page (indexes start from 0).
 
 `- (NSInteger)lastPage`
 
-- Description: index of the last page (indexes start from 0).
+- Returns: index of the last page (indexes start from 0).
 
 `- (NSInteger)numberOfPages`
 
-- Description: the current number of pages of the paginated scroll view.
+- Returns: the current number of pages of the paginated scroll view.
 
 ### Setting up pages
-
-Pages are added through blocks, with the following method:
 
 `- (void)addPageWithHandler:(void (^)(UIView * pageView))handler`
 
@@ -53,8 +51,6 @@ Here's an example without using autolayout, to simplify things. If you want to s
     }];
 
 ### Jumping between pages
-
-You can jump to the page you want with this method:
 
 `- (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion`
 
