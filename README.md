@@ -3,16 +3,8 @@ DRPaginatedScrollView
 
 Implement a paginated scroll view really easily using blocks.
 
-***<p align="center">Portrait orientation</p>***
-
 <p align="center">
 	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/1.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" width="320px" />
-</p>
-
-***<p align="center">Landscape orientation</p>***
-
-<p align="center">
-	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
 </p>
 
 ## Features
@@ -22,6 +14,10 @@ Implement a paginated scroll view really easily using blocks.
 - Automatic **jump** to the next page **by tapping**.
 - **Autolayout**-ready.
 - It supports both **portrait** and **landscape** orientations.
+
+<p align="center">
+	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
+</p>
 
 ## How to use
 
