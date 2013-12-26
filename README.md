@@ -17,7 +17,6 @@ Implement a paginated scroll view really easily using blocks.
 `- (NSInteger)currentPage`
 
 - Description: index of the current page displaying (indexes start from 0).
-- Default value: `0`
 
 `- (NSInteger)nextPage`
 
