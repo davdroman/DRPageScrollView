@@ -7,6 +7,10 @@ Implement a paginated scroll view really easily using blocks.
 	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/1.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" width="320px" />
 </p>
 
+<p align="center">
+	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
+</p>
+
 ## Features
 
 - **Block-driven** pages setup.
@@ -15,9 +19,11 @@ Implement a paginated scroll view really easily using blocks.
 - **Autolayout**-ready.
 - It supports both **portrait** and **landscape** orientations.
 
-<p align="center">
-	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
-</p>
+## CocoaPods
+
+You can install DRPaginatedScrollView through CocoaPods adding the following to your Podfile:
+
+	pod 'DRPaginatedScrollView'
 
 ## How to use
 
@@ -136,7 +142,7 @@ void (^actionWhenTappedBlock)(DRPaginatedScrollView *)
 
 ## Wish list
 
-- CocoaPods support.
+- **~~CocoaPods support.~~**
 - Automatic block-customizable page indicator (`paginatedScrollView configurePageIndicatorWithHandler:`).
 - Being able to clip any subview until a determined page (`pageView clipSubview:untilPage:`) and forever (`pageView clipSubviewForever:`).
 
