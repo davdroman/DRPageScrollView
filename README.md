@@ -143,6 +143,7 @@ void (^actionWhenTappedBlock)(DRPaginatedScrollView *)
 ## Wish list
 
 - **~~CocoaPods support.~~**
+- Being able to add gaps between pages.
 - Automatic block-customizable page indicator (`paginatedScrollView configurePageIndicatorWithHandler:`).
 - Being able to clip any subview until a determined page (`pageView clipSubview:untilPage:`) and forever (`pageView clipSubviewForever:`).
 
