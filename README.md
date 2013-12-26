@@ -16,8 +16,8 @@ Implement a paginated scroll view really easily using blocks.
 - **Block-driven** pages setup.
 - **Jump** between pages (with **bouncy effect**).
 - Automatic **jump** to the next page **by tapping**.
-- **Autolayout**-ready.
-- It supports both **portrait** and **landscape** orientations.
+- **Autolayout**-compatible.
+- **Portrait** and **landscape** orientations support.
 
 ## CocoaPods
 
