@@ -16,25 +16,35 @@ Implement a paginated scroll view really easily using blocks.
 
 ### Getting page-related information
 
-`- (NSInteger)currentPage`
+```objective-c
+- (NSInteger)currentPage
+```
 
 - Returns: index of the current page displaying (indexes start from 0).
 
-`- (NSInteger)nextPage`
+```objective-c
+- (NSInteger)nextPage
+```
 
 - Returns: index of the next page (indexes start from 0).
 
-`- (NSInteger)lastPage`
+```objective-c
+- (NSInteger)lastPage
+```
 
 - Returns: index of the last page (indexes start from 0).
 
-`- (NSInteger)numberOfPages`
+```objective-c
+- (NSInteger)numberOfPages
+```
 
 - Returns: the current number of pages of the paginated scroll view.
 
 ### Setting up pages
 
-`- (void)addPageWithHandler:(void (^)(UIView * pageView))handler`
+```objective-c
+- (void)addPageWithHandler:(void (^)(UIView * pageView))handler
+```
 
 - `handler` is a block passing the view that will contain the subviews for the new page, so in that block you just need to add all the views to be displayed on that page to the `pageView`. It'll just work.
 
@@ -55,7 +65,9 @@ Here's an example without using autolayout, to simplify things. If you want to s
 ```
 ### Jumping between pages
 
-`- (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion`
+```objective-c
+- (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion
+```
 
 - `page` specifies the index of the page to jump.
 - `bounce` specifies the amount of bouncy effect the jump will be performed with. Recommended values are `0`-`40`, being 0 the total absence of bounce.
@@ -85,11 +97,15 @@ Here are some examples:
 
 ### Controlling details of jumps between pages
 
-`BOOL isJumping`
+```objective-c
+BOOL isJumping
+```
 
 - Description: whether the paginated scroll view is currently jumping between pages or not.
 
-`NSTimeInterval jumpDurationPerPage`
+```objective-c
+NSTimeInterval jumpDurationPerPage
+```
 
 - Description: the duration each page will last jumping with when jumping through multiple pages.
 - Default value: `0.1`
@@ -97,7 +113,9 @@ Here are some examples:
 
 ### Handling taps on the view
 
-`void (^actionWhenTappedBlock)(DRPaginatedScrollView *)`
+```objective-c
+void (^actionWhenTappedBlock)(DRPaginatedScrollView *)
+```
 
 - Description: action that executes when the paginated scroll view is tapped.
 - Default value:
@@ -119,6 +137,16 @@ Here are some examples:
 
 - iOS 6 or higher.
 - Automatic Reference Counting (ARC).
+
+## Contact
+
+### Creator
+
+[**David Román**](http://github.com/Dromaguirre) | [@Dromaguirre](http://twitter.com/Dromaguirre)
+
+### Contributors
+
+No contributors, *yet*.
 
 ## License
 
