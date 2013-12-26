@@ -44,14 +44,15 @@ Anyway, if you decide to use autolayout I suggest using a framework called [**Ma
 
 Here's an example without using autolayout, to simplify things. If you want to see an example of this implementation using autolayout, check out the demo app:
 
-	[paginatedScrollView addPageWithHandler:^(UIView * pageView) {
-        UIView * square = [UIView new];
-        [square setBackgroundColor:[UIColor redColor]];
-        [square setFrame:CGRectMake(0, 0, 100, 100)];
-        
-        [pageView addSubview:square];
-    }];
-
+```objective-c
+[paginatedScrollView addPageWithHandler:^(UIView * pageView) {
+    UIView * square = [UIView new];
+    [square setBackgroundColor:[UIColor redColor]];
+    [square setFrame:CGRectMake(0, 0, 100, 100)];
+    
+    [pageView addSubview:square];
+}];
+```
 ### Jumping between pages
 
 `- (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion`
@@ -101,10 +102,11 @@ Here are some examples:
 - Description: action that executes when the paginated scroll view is tapped.
 - Default value:
 
-		^(DRPaginatedScrollView * paginatedScrollView) {
-			[paginatedScrollView jumpToPage:[paginatedScrollView nextPage] bounce:0 completion:nil];
-		}
-		
+	```objective-c
+	^(DRPaginatedScrollView * paginatedScrollView) {
+		[paginatedScrollView jumpToPage:[paginatedScrollView nextPage] bounce:0 completion:nil];
+	}
+	```		
 - Recommended value: any.
 
 ## Wish list
