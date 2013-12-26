@@ -106,6 +106,7 @@ Here are some examples:
 ## Wish list
 
 - Automatic block-customizable page indicator.
+- CocoaPods support.
 
 ## Requirements
 
