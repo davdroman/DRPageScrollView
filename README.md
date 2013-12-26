@@ -3,6 +3,8 @@ DRPaginatedScrollView
 
 Implement a paginated scroll view really easily using blocks.
 
+// GIF coming soon.
+
 ## Features
 
 - **Block-driven** pages setup.
@@ -59,24 +61,26 @@ Here's an example without using autolayout, to simplify things. If you want to s
 - `completion` is a block that will be executed after the jump is performed.
 
 Here are some examples:
-	
-	// Jumping to the 4th page with no bounce effect and completion
-	
-	[paginatedScrollView jumpToPage:3 bounce:0 completion:^{
-		NSLog(@"Jump finished!");
-	}];
-	
-	// Jumping to the first page with a normal bounce effect and no completion
-	
-	[paginatedScrollView jumpToPage:0 bounce:20 completion:nil];
-	
-	// Jumping to the next page with a little bounce effect and no completion
-	
-	[paginatedScrollView jumpToPage:[paginatedScrollView nextPage] bounce:10 completion:nil];
-	
-	// Jumping to the last page with a high bounce effect and no completion
-	
-	[paginatedScrollView jumpToPage:[paginatedScrollView lastPage] bounce:40 completion:nil];
+
+```objective-c
+// Jumping to the 4th page with no bounce effect and completion
+
+[paginatedScrollView jumpToPage:3 bounce:0 completion:^{
+	NSLog(@"Jump finished!");
+}];
+
+// Jumping to the first page with a normal bounce effect and no completion
+
+[paginatedScrollView jumpToPage:0 bounce:20 completion:nil];
+
+// Jumping to the next page with a little bounce effect and no completion
+
+[paginatedScrollView jumpToPage:[paginatedScrollView nextPage] bounce:10 completion:nil];
+
+// Jumping to the last page with a high bounce effect and no completion
+
+[paginatedScrollView jumpToPage:[paginatedScrollView lastPage] bounce:40 completion:nil];
+```
 
 ### Controlling details of jumps between pages
 
@@ -88,7 +92,7 @@ Here are some examples:
 
 - Description: the duration each page will last jumping with when jumping through multiple pages.
 - Default value: `0.1`
-- Recommended value: `0.05`-`0.4`
+- Recommended value: `0.05`-`0.175`
 
 ### Handling taps on the view
 
@@ -105,8 +109,9 @@ Here are some examples:
 
 ## Wish list
 
-- Automatic block-customizable page indicator.
 - CocoaPods support.
+- Automatic block-customizable page indicator (`paginatedScrollView configurePageIndicatorWithHandler:`).
+- Being able to clip any subview until a determined page (`pageView clipSubview:untilPage:`) and forever (`pageView clipSubviewForever:`).
 
 ## Requirements
 
