@@ -56,16 +56,31 @@
     [super layoutSubviews];
 }
 
+- (NSInteger)currentPage {
+    return round(self.contentOffset.x/self.frame.size.width);
+}
+
+- (NSInteger)nextPage {
+    return self.currentPage+1;
+}
+
+- (NSInteger)lastPage {
+    return self.numberOfPages-1;
+}
+
+- (NSInteger)numberOfPages {
+    return [pageViews count];
+}
+
 - (void)addPageWithHandler:(void (^)(UIView * pageView))handler {
     UIView * pageView = [UIView new];
     
     handler(pageView);
-    [pageView setTag:self.numberOfPages];
     [pageView setBackgroundColor:[UIColor clearColor]];
     [pageView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:pageView];
     
-    UIView * previousPageView = nil;
+    UIView * previousPageView;
     
     if (self.numberOfPages > 0) {
         previousPageView = pageViews[self.numberOfPages-1];
@@ -85,22 +100,6 @@
     [self addConstraints:@[topConstraint, leftConstraint, widthConstraint, heightConstraint]];
     
     [pageViews addObject:pageView];
-}
-
-- (NSInteger)currentPage {
-    return round(self.contentOffset.x/self.frame.size.width);
-}
-
-- (NSInteger)nextPage {
-    return self.currentPage+1;
-}
-
-- (NSInteger)lastPage {
-    return self.numberOfPages-1;
-}
-
-- (NSInteger)numberOfPages {
-    return [pageViews count];
 }
 
 - (void)jumpToPage:(NSInteger)page bounce:(CGFloat)bounce completion:(void (^)(void))completion {

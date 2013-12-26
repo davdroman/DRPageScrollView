@@ -35,7 +35,7 @@
     UINavigationItem * item = [[UINavigationItem alloc] initWithTitle:@"DRPaginatedScrollView"];
     [self.navigationBar setItems:@[item]];
     
-    [self.paginatedScrollView setJumpDurationPerPage:0.15];
+    [self.paginatedScrollView setJumpDurationPerPage:0.125];
     
     [self.paginatedScrollView addPageWithHandler:^(UIView *pageView) {
         UILabel * label = [UILabel new];
@@ -57,7 +57,7 @@
     
     [self.paginatedScrollView addPageWithHandler:^(UIView *pageView) {
         UIButton * jumpButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        [jumpButton setTitle:@"Jump!" forState:UIControlStateNormal];
+        [jumpButton setTitle:@"Jump bouncy!" forState:UIControlStateNormal];
         [jumpButton.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:18]];
         [jumpButton addTarget:_self action:@selector(jumpBouncy) forControlEvents:UIControlEventTouchUpInside];
         [pageView addSubview:jumpButton];
@@ -117,7 +117,7 @@
 }
 
 - (void)jumpBouncy {
-    [self.paginatedScrollView jumpToPage:[self.paginatedScrollView lastPage] bounce:25 completion:nil];
+    [self.paginatedScrollView jumpToPage:[self.paginatedScrollView lastPage] bounce:30 completion:nil];
 }
 
 - (void)leaveFeedback {
