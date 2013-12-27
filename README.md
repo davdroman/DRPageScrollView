@@ -8,7 +8,7 @@ Implement a paginated scroll view really easily using blocks.
 </p>
 
 <p align="center">
-	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
+	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" width="568px" />
 </p>
 
 ## Features
@@ -143,6 +143,7 @@ void (^actionWhenTappedBlock)(DRPaginatedScrollView *)
 ## Wish list
 
 - **~~CocoaPods support.~~**
+- Being able to add gaps between pages.
 - Automatic block-customizable page indicator (`paginatedScrollView configurePageIndicatorWithHandler:`).
 - Being able to clip any subview until a determined page (`pageView clipSubview:untilPage:`) and forever (`pageView clipSubviewForever:`).
 
