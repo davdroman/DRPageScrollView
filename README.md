@@ -8,7 +8,7 @@ Implement a paginated scroll view really easily using blocks.
 </p>
 
 <p align="center">
-	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" height="320px" />
+	<img src="https://raw.github.com/Dromaguirre/DRPaginatedScrollView/images/2.gif" alt="DRPaginatedScrollView GIF" title="DRPaginatedScrollView GIF" width="568px" />
 </p>
 
 ## Features
