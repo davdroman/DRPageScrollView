@@ -152,13 +152,11 @@ void (^actionWhenTappedBlock)(DRPaginatedScrollView *)
 - iOS 6 or higher.
 - Automatic Reference Counting (ARC).
 
-## Contact
-
-### Creator
+## Creator
 
 [**David Román**](http://github.com/Dromaguirre) | [@Dromaguirre](http://twitter.com/Dromaguirre)
 
-### Contributors
+## Contributors
 
 No contributors, *yet*.
 
