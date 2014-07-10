@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSTimeInterval jumpDurationPerPage;
 @property (readonly, nonatomic, getter = isJumping) BOOL jumping;
+@property (nonatomic, assign) NSInteger initalViewIndex；
 
 @property (copy, nonatomic) void (^actionWhenTappedBlock)(DRPaginatedScrollView *);
 

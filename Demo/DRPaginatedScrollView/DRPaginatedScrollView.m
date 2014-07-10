@@ -56,6 +56,11 @@
     [super layoutSubviews];
 }
 
+- (void)setInitalViewIndex:(NSInteger)initalViewIndex {
+    _initalViewIndex = initalViewIndex;
+    previousPage = _initalViewIndex;
+}
+
 - (NSInteger)currentPage {
     return round(self.contentOffset.x/self.frame.size.width);
 }
