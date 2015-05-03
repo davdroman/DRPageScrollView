@@ -13,17 +13,17 @@ DRPageScrollView
 
 ## Installation
 
-### CocoaPods
+#### CocoaPods
 
 	pod 'DRPageScrollView'
 
-### Manually
+#### Manually
 
 Drag and copy all files in the [__DRPageScrollView__](DRPageScrollView) folder into your project.
 
 ## At a glance
 
-### Enabling page reusability
+#### Enabling page reusability
 
 Enabling page reusability is ridiculously simple:
 
@@ -33,7 +33,7 @@ pageScrollView.pageReuseEnabled = YES;
 
 _Note: `pageReuseEnabled` is meant to be set to the desired value before adding any pages to the page scroll view._
 
-### Adding a page
+#### Adding a page
 
 Using Auto Layout on the subviews is not compulsory, but it's highly recommended.
 
