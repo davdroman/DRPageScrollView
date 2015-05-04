@@ -17,7 +17,7 @@ DRPageScrollView
 
 	pod 'DRPageScrollView'
 
-#### Manually
+#### Manual
 
 Drag and copy all files in the [__DRPageScrollView__](DRPageScrollView) folder into your project.
 
@@ -35,9 +35,7 @@ _Note: `pageReuseEnabled` is meant to be set to the desired value before adding 
 
 #### Adding a page
 
-Using Auto Layout on the subviews is not compulsory, but it's highly recommended.
-
-For the sake of simplicity, the example below doesn't contain Auto Layout code.
+Using Auto Layout on the subviews is not compulsory, but it's highly recommended. For the sake of simplicity, the example below doesn't contain Auto Layout code.
 
 ```objective-c
 [pageScrollView addPageWithHandler:^(UIView *pageView) {
