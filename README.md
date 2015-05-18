@@ -15,7 +15,9 @@ DRPageScrollView
 
 #### CocoaPods
 
-	pod 'DRPageScrollView'
+```ruby
+pod 'DRPageScrollView'
+```
 
 #### Manual
 
@@ -49,4 +51,4 @@ Using Auto Layout on the subviews is not compulsory, but it's highly recommended
 
 ## License
 
-`DRPageScrollView` is available under the MIT license.
+DRPageScrollView is available under the MIT license.
