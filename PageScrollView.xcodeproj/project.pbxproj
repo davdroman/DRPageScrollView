@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D5A5F82520FA496A00B89A41 /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5F82420FA496A00B89A41 /* PageScrollView.swift */; };
+		D5A5F85620FA4A0500B89A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5F85520FA4A0500B89A41 /* AppDelegate.swift */; };
+		D5A5F85820FA4A0500B89A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5F85720FA4A0500B89A41 /* ViewController.swift */; };
+		D5A5F85B20FA4A0500B89A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A5F85920FA4A0500B89A41 /* Main.storyboard */; };
+		D5A5F85D20FA4A0600B89A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A5F85C20FA4A0600B89A41 /* Assets.xcassets */; };
+		D5A5F86020FA4A0600B89A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A5F85E20FA4A0600B89A41 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,24 @@
 /* Begin PBXFileReference section */
 		D5A5F82120FA496A00B89A41 /* libPageScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPageScrollView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A5F82420FA496A00B89A41 /* PageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
+		D5A5F85320FA4A0500B89A41 /* PageScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A5F85520FA4A0500B89A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5A5F85720FA4A0500B89A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5A5F85A20FA4A0500B89A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5A5F85C20FA4A0600B89A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5A5F85F20FA4A0600B89A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5A5F86120FA4A0600B89A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D5A5F81E20FA496A00B89A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A5F85020FA4A0500B89A41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +60,7 @@
 		D5A5F81820FA496A00B89A41 = {
 			isa = PBXGroup;
 			children = (
+				D5A5F85420FA4A0500B89A41 /* PageScrollViewDemo */,
 				D5A5F82320FA496A00B89A41 /* PageScrollView */,
 				D5A5F82220FA496A00B89A41 /* Products */,
 			);
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A5F82120FA496A00B89A41 /* libPageScrollView.a */,
+				D5A5F85320FA4A0500B89A41 /* PageScrollViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,19 @@
 				D5A5F82420FA496A00B89A41 /* PageScrollView.swift */,
 			);
 			path = PageScrollView;
+			sourceTree = "<group>";
+		};
+		D5A5F85420FA4A0500B89A41 /* PageScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D5A5F85520FA4A0500B89A41 /* AppDelegate.swift */,
+				D5A5F85720FA4A0500B89A41 /* ViewController.swift */,
+				D5A5F85920FA4A0500B89A41 /* Main.storyboard */,
+				D5A5F85C20FA4A0600B89A41 /* Assets.xcassets */,
+				D5A5F85E20FA4A0600B89A41 /* LaunchScreen.storyboard */,
+				D5A5F86120FA4A0600B89A41 /* Info.plist */,
+			);
+			path = PageScrollViewDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,23 @@
 			productReference = D5A5F82120FA496A00B89A41 /* libPageScrollView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		D5A5F85220FA4A0500B89A41 /* PageScrollViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A5F86420FA4A0600B89A41 /* Build configuration list for PBXNativeTarget "PageScrollViewDemo" */;
+			buildPhases = (
+				D5A5F84F20FA4A0500B89A41 /* Sources */,
+				D5A5F85020FA4A0500B89A41 /* Frameworks */,
+				D5A5F85120FA4A0500B89A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PageScrollViewDemo;
+			productName = PageScrollViewDemo;
+			productReference = D5A5F85320FA4A0500B89A41 /* PageScrollViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +146,9 @@
 					D5A5F82020FA496A00B89A41 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					D5A5F85220FA4A0500B89A41 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = D5A5F81C20FA496A00B89A41 /* Build configuration list for PBXProject "PageScrollView" */;
@@ -103,6 +157,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D5A5F81820FA496A00B89A41;
 			productRefGroup = D5A5F82220FA496A00B89A41 /* Products */;
@@ -110,9 +165,23 @@
 			projectRoot = "";
 			targets = (
 				D5A5F82020FA496A00B89A41 /* PageScrollView */,
+				D5A5F85220FA4A0500B89A41 /* PageScrollViewDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5A5F85120FA4A0500B89A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A5F86020FA4A0600B89A41 /* LaunchScreen.storyboard in Resources */,
+				D5A5F85D20FA4A0600B89A41 /* Assets.xcassets in Resources */,
+				D5A5F85B20FA4A0500B89A41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5A5F81D20FA496A00B89A41 /* Sources */ = {
@@ -123,7 +192,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5A5F84F20FA4A0500B89A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A5F85820FA4A0500B89A41 /* ViewController.swift in Sources */,
+				D5A5F85620FA4A0500B89A41 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5A5F85920FA4A0500B89A41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A5F85A20FA4A0500B89A41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5A5F85E20FA4A0600B89A41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A5F85F20FA4A0600B89A41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D5A5F82620FA496A00B89A41 /* Debug */ = {
@@ -266,6 +363,40 @@
 			};
 			name = Release;
 		};
+		D5A5F86220FA4A0600B89A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PageScrollViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.davidroman.PageScrollViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5A5F86320FA4A0600B89A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PageScrollViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.davidroman.PageScrollViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -283,6 +414,15 @@
 			buildConfigurations = (
 				D5A5F82920FA496A00B89A41 /* Debug */,
 				D5A5F82A20FA496A00B89A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A5F86420FA4A0600B89A41 /* Build configuration list for PBXNativeTarget "PageScrollViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A5F86220FA4A0600B89A41 /* Debug */,
+				D5A5F86320FA4A0600B89A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
