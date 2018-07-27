@@ -10,15 +10,19 @@ import UIKit
 
 public final class PageScrollView: UIScrollView {
 
-	var pages: [UIView]
+	typealias ViewConfigurationClosure = (UIView) -> UIView
 
-	public init(pages: [UIView]) {
-		self.pages = pages
-		super.init(frame: .zero)
+	enum Page {
+		case nib(UINib)
+		case view(UIView)
+		case closure(ViewConfigurationClosure)
 	}
 
-	public init(nib: UINib) {
-		fatalError()
+	var pages: [Page]
+
+	public init(pages: [Page]) {
+		self.pages = pages
+		super.init(frame: .zero)
 	}
 
 	public required init?(coder aDecoder: NSCoder) {
