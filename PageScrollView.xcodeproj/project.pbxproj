@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5A5F82520FA496A00B89A41 /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5F82420FA496A00B89A41 /* PageScrollView.swift */; };
+		51BAD142210B56E500F88569 /* PageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BAD140210B56E500F88569 /* PageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51BAD145210B56E500F88569 /* PageScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BAD13E210B56E500F88569 /* PageScrollView.framework */; };
+		51BAD146210B56E500F88569 /* PageScrollView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51BAD13E210B56E500F88569 /* PageScrollView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51BAD14C210B56FF00F88569 /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BAD14B210B56FF00F88569 /* PageScrollView.swift */; };
 		D5A5F85620FA4A0500B89A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5F85520FA4A0500B89A41 /* AppDelegate.swift */; };
 		D5A5F85820FA4A0500B89A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5F85720FA4A0500B89A41 /* ViewController.swift */; };
 		D5A5F85B20FA4A0500B89A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A5F85920FA4A0500B89A41 /* Main.storyboard */; };
@@ -15,21 +18,35 @@
 		D5A5F86020FA4A0600B89A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A5F85E20FA4A0600B89A41 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		51BAD143210B56E500F88569 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A5F81920FA496A00B89A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51BAD13D210B56E500F88569;
+			remoteInfo = PageScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		D5A5F81F20FA496A00B89A41 /* CopyFiles */ = {
+		51BAD14A210B56E500F88569 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				51BAD146210B56E500F88569 /* PageScrollView.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D5A5F82120FA496A00B89A41 /* libPageScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPageScrollView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5A5F82420FA496A00B89A41 /* PageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
+		51BAD13E210B56E500F88569 /* PageScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PageScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BAD140210B56E500F88569 /* PageScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageScrollView.h; sourceTree = "<group>"; };
+		51BAD141210B56E500F88569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BAD14B210B56FF00F88569 /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
 		D5A5F85320FA4A0500B89A41 /* PageScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A5F85520FA4A0500B89A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A5F85720FA4A0500B89A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +57,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D5A5F81E20FA496A00B89A41 /* Frameworks */ = {
+		51BAD13B210B56E500F88569 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,17 +68,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BAD145210B56E500F88569 /* PageScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51BAD13F210B56E500F88569 /* PageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				51BAD140210B56E500F88569 /* PageScrollView.h */,
+				51BAD14B210B56FF00F88569 /* PageScrollView.swift */,
+				51BAD141210B56E500F88569 /* Info.plist */,
+			);
+			path = PageScrollView;
+			sourceTree = "<group>";
+		};
 		D5A5F81820FA496A00B89A41 = {
 			isa = PBXGroup;
 			children = (
 				D5A5F85420FA4A0500B89A41 /* PageScrollViewDemo */,
-				D5A5F82320FA496A00B89A41 /* PageScrollView */,
+				51BAD13F210B56E500F88569 /* PageScrollView */,
 				D5A5F82220FA496A00B89A41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,18 +97,10 @@
 		D5A5F82220FA496A00B89A41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5A5F82120FA496A00B89A41 /* libPageScrollView.a */,
 				D5A5F85320FA4A0500B89A41 /* PageScrollViewDemo.app */,
+				51BAD13E210B56E500F88569 /* PageScrollView.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D5A5F82320FA496A00B89A41 /* PageScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				D5A5F82420FA496A00B89A41 /* PageScrollView.swift */,
-			);
-			path = PageScrollView;
 			sourceTree = "<group>";
 		};
 		D5A5F85420FA4A0500B89A41 /* PageScrollViewDemo */ = {
@@ -98,14 +118,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		51BAD139210B56E500F88569 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51BAD142210B56E500F88569 /* PageScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D5A5F82020FA496A00B89A41 /* PageScrollView */ = {
+		51BAD13D210B56E500F88569 /* PageScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5A5F82820FA496A00B89A41 /* Build configuration list for PBXNativeTarget "PageScrollView" */;
+			buildConfigurationList = 51BAD147210B56E500F88569 /* Build configuration list for PBXNativeTarget "PageScrollView" */;
 			buildPhases = (
-				D5A5F81D20FA496A00B89A41 /* Sources */,
-				D5A5F81E20FA496A00B89A41 /* Frameworks */,
-				D5A5F81F20FA496A00B89A41 /* CopyFiles */,
+				51BAD139210B56E500F88569 /* Headers */,
+				51BAD13A210B56E500F88569 /* Sources */,
+				51BAD13B210B56E500F88569 /* Frameworks */,
+				51BAD13C210B56E500F88569 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -113,8 +145,8 @@
 			);
 			name = PageScrollView;
 			productName = PageScrollView;
-			productReference = D5A5F82120FA496A00B89A41 /* libPageScrollView.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 51BAD13E210B56E500F88569 /* PageScrollView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		D5A5F85220FA4A0500B89A41 /* PageScrollViewDemo */ = {
 			isa = PBXNativeTarget;
@@ -123,10 +155,12 @@
 				D5A5F84F20FA4A0500B89A41 /* Sources */,
 				D5A5F85020FA4A0500B89A41 /* Frameworks */,
 				D5A5F85120FA4A0500B89A41 /* Resources */,
+				51BAD14A210B56E500F88569 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51BAD144210B56E500F88569 /* PBXTargetDependency */,
 			);
 			name = PageScrollViewDemo;
 			productName = PageScrollViewDemo;
@@ -143,8 +177,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "David Roman";
 				TargetAttributes = {
-					D5A5F82020FA496A00B89A41 = {
+					51BAD13D210B56E500F88569 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					D5A5F85220FA4A0500B89A41 = {
 						CreatedOnToolsVersion = 10.0;
@@ -164,13 +199,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5A5F82020FA496A00B89A41 /* PageScrollView */,
 				D5A5F85220FA4A0500B89A41 /* PageScrollViewDemo */,
+				51BAD13D210B56E500F88569 /* PageScrollView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		51BAD13C210B56E500F88569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5A5F85120FA4A0500B89A41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,11 +226,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D5A5F81D20FA496A00B89A41 /* Sources */ = {
+		51BAD13A210B56E500F88569 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A5F82520FA496A00B89A41 /* PageScrollView.swift in Sources */,
+				51BAD14C210B56FF00F88569 /* PageScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +244,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51BAD144210B56E500F88569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51BAD13D210B56E500F88569 /* PageScrollView */;
+			targetProxy = 51BAD143210B56E500F88569 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D5A5F85920FA4A0500B89A41 /* Main.storyboard */ = {
@@ -223,6 +273,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		51BAD148210B56E500F88569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PageScrollView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asos.PageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51BAD149210B56E500F88569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PageScrollView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asos.PageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D5A5F82620FA496A00B89A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,33 +446,10 @@
 			};
 			name = Release;
 		};
-		D5A5F82920FA496A00B89A41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D5A5F82A20FA496A00B89A41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		D5A5F86220FA4A0600B89A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PageScrollViewDemo/Info.plist;
@@ -383,6 +467,7 @@
 		D5A5F86320FA4A0600B89A41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PageScrollViewDemo/Info.plist;
@@ -400,20 +485,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		51BAD147210B56E500F88569 /* Build configuration list for PBXNativeTarget "PageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51BAD148210B56E500F88569 /* Debug */,
+				51BAD149210B56E500F88569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5A5F81C20FA496A00B89A41 /* Build configuration list for PBXProject "PageScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5A5F82620FA496A00B89A41 /* Debug */,
 				D5A5F82720FA496A00B89A41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5A5F82820FA496A00B89A41 /* Build configuration list for PBXNativeTarget "PageScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5A5F82920FA496A00B89A41 /* Debug */,
-				D5A5F82A20FA496A00B89A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
