@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		51A68BEA215BE44500114F37 /* PageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A68BE8215BE44500114F37 /* PageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51E11166215BE5C400975FD1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E11165215BE5C400975FD1 /* PageView.swift */; };
+		D592B3BA216E0F8200C23492 /* PageViewDataSourceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D592B3B9216E0F8200C23492 /* PageViewDataSourceExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		51A68BE8215BE44500114F37 /* PageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
 		51A68BE9215BE44500114F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E11165215BE5C400975FD1 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		D592B3B9216E0F8200C23492 /* PageViewDataSourceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewDataSourceExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				51A68BE8215BE44500114F37 /* PageView.h */,
 				51E11165215BE5C400975FD1 /* PageView.swift */,
+				D592B3B9216E0F8200C23492 /* PageViewDataSourceExtensions.swift */,
 				51A68BE9215BE44500114F37 /* Info.plist */,
 			);
 			path = PageView;
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D592B3BA216E0F8200C23492 /* PageViewDataSourceExtensions.swift in Sources */,
 				51E11166215BE5C400975FD1 /* PageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
