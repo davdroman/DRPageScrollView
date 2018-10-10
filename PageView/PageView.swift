@@ -34,14 +34,29 @@ public final class PageView: UIScrollView {
 		case vertical
 	}
 
+	// MARK: - Data Source
+
+	private typealias PageViewDataSourceObject = PageViewDataSource & AnyObject
+
+	private weak var weakDataSource: PageViewDataSourceObject?
+	private var strongDataSource: PageViewDataSource?
+
+	public var dataSource: PageViewDataSource? {
+		get {
+			return weakDataSource ?? strongDataSource
+		}
+		set {
+			weakDataSource = newValue as? PageViewDataSourceObject
+			strongDataSource = weakDataSource == nil ? newValue : nil
+		}
+	}
+
 	var pages: [UIView] {
 		didSet {
 			oldValue.forEach { $0.removeFromSuperview() }
 			setUpPages()
 		}
 	}
-
-	public weak var dataSource: PageViewDataSource? // FIXME
 
 	public init(direction: Direction = .horizontal, pages: [UIView]) {
 		self.pages = pages
