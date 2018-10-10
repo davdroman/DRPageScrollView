@@ -66,6 +66,7 @@ public final class PageView: UIScrollView {
 
 	func setUpPages() {
 		for (index, page) in pages.enumerated() {
+			// FIXME
 			let centerXConstant: CGFloat = index
 			let centerYConstant: CGFloat = index
 			page.translatesAutoresizingMaskIntoConstraints = false
