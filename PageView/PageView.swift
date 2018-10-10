@@ -64,31 +64,40 @@ public final class PageView: UIScrollView {
 		}
 	}
 
-	var pages: [UIView] {
-		didSet {
-			oldValue.forEach { $0.removeFromSuperview() }
-			setUpPages()
-		}
-	}
+	public var direction: Direction
 
-	public init(direction: Direction = .horizontal, pages: [UIView]) {
-		self.pages = pages
+//	var pages: [UIView] {
+//		didSet {
+//			oldValue.forEach { $0.removeFromSuperview() }
+//			setUpPages()
+//		}
+//	}
+
+	public init(direction: Direction = .horizontal) {
+		self.direction = direction
 		super.init(frame: .zero)
 		setUpPages()
 	}
 
 	func setUpPages() {
+		guard let dataSource = dataSource else {
+			return
+		}
+
+		let numberOfPages = dataSource.numberOfPages(in: self)
+		let pages = (0..<numberOfPages).map({ dataSource.pageView(self, viewForPageAt: $0) })
+
 		for (index, page) in pages.enumerated() {
 			// FIXME
-			let centerXConstant: CGFloat = index
-			let centerYConstant: CGFloat = index
-			page.translatesAutoresizingMaskIntoConstraints = false
-			NSLayoutConstraint.activate([
-				page.centerXAnchor.constraint(equalTo: centerXAnchor, constant: centerXConstant),
-				page.centerYAnchor.constraint(equalTo: centerYAnchor, constant: centerYConstant),
-				page.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1),
-				page.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1),
-			])
+//			let centerXConstant: CGFloat = index
+//			let centerYConstant: CGFloat = index
+//			page.translatesAutoresizingMaskIntoConstraints = false
+//			NSLayoutConstraint.activate([
+//				page.centerXAnchor.constraint(equalTo: centerXAnchor, constant: centerXConstant),
+//				page.centerYAnchor.constraint(equalTo: centerYAnchor, constant: centerYConstant),
+//				page.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1),
+//				page.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1),
+//			])
 		}
 	}
 
