@@ -1,3 +1,11 @@
+> **THIS PROJECT IS NO LONGER MAINTAINED. HERE ARE SOME SUITABLE ALTERNATIVES:**
+>
+> - https://github.com/WenchaoD/FSPagerView
+> - https://github.com/rechsteiner/Parchment
+> - https://github.com/uias/Pageboy
+
+---
+
 DRPageScrollView
 ================
 
